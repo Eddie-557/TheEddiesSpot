@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Eddies Spot | Premium Nigerian Fashion</title>
+  <meta name="description" content="The Eddies Spot (fictional store): premium menswear, womenswear, dresses, bags, shoes, jewelry, watches and accessories.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header" id="top">
+  <div class="container nav-wrap">
+    <a href="#home" class="logo" aria-label="The Eddies Spot home">The Eddies <span>Spot</span></a>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="nav" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    <nav id="nav" class="nav" aria-label="Main navigation">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#shop">Shop</a></li>
+        <li><a href="#collections">Collections</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" id="home">
+    <div class="container hero-inner">
+      <p class="eyebrow">New Season · 2026</p>
+      <h1>Dress the way<br>you <em>mean it.</em></h1>
+      <p class="lead">Considered tailoring, statement pieces and everyday luxury, curated for Nigerians who treat style as self-expression.</p>
+      <div class="hero-actions">
+        <a href="#shop" class="btn btn-primary">Shop Now</a>
+        <a href="#collections" class="btn btn-ghost">View Collections</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="strip" aria-label="Store promises">
+    <div class="container strip-grid">
+      <p>Nationwide delivery</p><p>Order via WhatsApp</p><p>Easy exchanges</p><p>Authentic quality</p>
+    </div>
+  </section>
+
+  <section class="section" id="collections" aria-labelledby="colTitle">
+    <div class="container">
+      <p class="eyebrow dark">Featured</p>
+      <h2 id="colTitle">Collections</h2>
+      <div class="tabs" role="group" aria-label="Collection filter">
+        <button class="tab active" data-collection="new" aria-pressed="true">New Arrivals</button>
+        <button class="tab" data-collection="trending" aria-pressed="false">Trending</button>
+        <button class="tab" data-collection="best" aria-pressed="false">Bestsellers</button>
+      </div>
+      <div class="grid" id="collectionGrid" aria-live="polite"></div>
+    </div>
+  </section>
+
+  <section class="section alt" id="shop" aria-labelledby="shopTitle">
+    <div class="container">
+      <p class="eyebrow dark">The Catalogue</p>
+      <h2 id="shopTitle">Shop All</h2>
+      <div class="filters" id="filters" role="group" aria-label="Filter products by category"></div>
+      <p class="count" id="count" aria-live="polite"></p>
+      <div class="grid" id="productGrid"></div>
+    </div>
+  </section>
+
+  <section class="section about" id="about" aria-labelledby="aboutTitle">
+    <div class="container about-grid">
+      <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=900&q=80" alt="Neatly styled clothing displayed inside a boutique" loading="lazy">
+      <div>
+        <p class="eyebrow dark">Our Story</p>
+        <h2 id="aboutTitle">Style is personal. We just help you say it louder.</h2>
+        <p>The Eddies Spot is a fictional Lagos-inspired fashion house built on one belief: clothing should feel like you on your best day. We blend clean international silhouettes with bold Nigerian confidence.</p>
+        <p>Our philosophy is simple: buy fewer, better pieces, mix them freely and wear them with intention. Whether you are dressing for work, owambe or a quiet weekend, our stylists help you build a look that is unmistakably yours.</p>
+        <ul class="values">
+          <li><strong>Quality first</strong> Fabrics and finishes that last.</li>
+          <li><strong>Inclusive fit</strong> Sizes and styles for every body.</li>
+          <li><strong>Personal service</strong> Real styling help, one chat away.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section alt" id="contact" aria-labelledby="contactTitle">
+    <div class="container">
+      <p class="eyebrow dark">Visit &amp; Contact</p>
+      <h2 id="contactTitle">Store Information</h2>
+      <p class="notice">All details below are fictional placeholders for demonstration only.</p>
+      <div class="info-grid">
+        <article class="card">
+          <h3>Location</h3>
+          <address>The Eddies Spot (Demo Store)<br>12 Example Street, Sample District<br>Abuja, Nigeria<br><small>Fictional address</small></address>
+        </article>
+        <article class="card">
+          <h3>Opening Hours</h3>
+          <table><tbody>
+            <tr><th scope="row">Mon – Fri</th><td>9:00am – 7:00pm</td></tr>
+            <tr><th scope="row">Saturday</th><td>10:00am – 8:00pm</td></tr>
+            <tr><th scope="row">Sunday</th><td>1:00pm – 6:00pm</td></tr>
+          </tbody></table>
+          <p class="open-status" id="openStatus"></p>
+        </article>
+        <article class="card">
+          <h3>Talk to Us</h3>
+          <p>Phone: +234 000 000 0000<br><small>Fictional number</small></p>
+          <p>WhatsApp: +234 000 000 0001<br><small>Fictional number</small></p>
+          <a class="btn btn-wa" data-wa="Hello The Eddies Spot, I have an enquiry." href="#">Chat on WhatsApp</a>
+        </article>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <div>
+      <a href="#home" class="logo light">The Eddies <span>Spot</span></a>
+      <p>Premium fashion for confident self-expression. A fictional demo brand.</p>
+    </div>
+    <nav aria-label="Footer navigation">
+      <h3>Explore</h3>
+      <ul>
+        <li><a href="#home">Home</a></li><li><a href="#shop">Shop</a></li>
+        <li><a href="#collections">Collections</a></li><li><a href="#about">About Us</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div>
+      <h3>Visit</h3>
+      <p>12 Example Street, Sample District, Abuja<br>Mon–Sat 9am–8pm<br>(fictional details)</p>
+    </div>
+    <div>
+      <h3>Follow</h3>
+      <ul>
+        <li><a href="#" data-placeholder>Instagram: @theeddiesspot_demo</a></li>
+        <li><a href="#" data-placeholder>TikTok: @theeddiesspot_demo</a></li>
+        <li><a href="#" data-placeholder>X: @eddiesspot_demo</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container copy">© <span id="year"></span> The Eddies Spot. Fictional brand for demonstration. Photos via Unsplash.</div>
+</footer>
+
+<a class="wa-float" data-wa="Hello The Eddies Spot, I would like to place an order." href="#" aria-label="Order on WhatsApp">
+  <svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.800 14.200c-.2.700-1.400 1.300-2 1.400-.500.100-1.100.100-1.800-.1-.400-.1-.900-.300-1.600-.600-2.800-1.200-4.600-4-4.700-4.200-.100-.200-1.100-1.500-1.100-2.800s.700-2 1-2.300c.200-.300.500-.3.700-.3h.5c.2 0 .4 0 .600.500l.8 1.900c.1.200.1.400 0 .500l-.3.500-.4.400c-.1.200-.3.300-.1.600.2.300.8 1.300 1.700 2.100 1.100 1 2.100 1.300 2.400 1.400.3.100.4.100.6-.1l.8-1c.2-.3.400-.2.600-.1l1.800.9c.3.100.5.200.5.300.100.100.1.600-.1 1.300Z"/></svg>
+  <span>Order</span>
+</a>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script src="script.js"></script>
+</body>
+</html>
